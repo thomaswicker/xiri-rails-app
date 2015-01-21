@@ -1,0 +1,202 @@
+/*
+  ____  _____ ______     _____ ____ _____ ____  
+ / ___|| ____|  _ \ \   / /_ _/ ___| ____/ ___| 
+ \___ \|  _| | |_) \ \ / / | | |   |  _| \___ \ 
+  ___) | |___|  _ < \ V /  | | |___| |___ ___) |
+ |____/|_____|_| \_\ \_/  |___\____|_____|____/ 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+*/
+
+@import 'vars';
+
+.services-container {
+  @include flex();
+  padding-bottom: 3.5em;
+  background-color: $white;
+
+  .services-container-inside {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $white;
+
+    @include mq(sm) {
+      width: 95%; 
+    }
+  }
+
+  .services-container-left {
+    @include flex();
+  }
+
+  .services-container-right {
+    @include flex();
+  }
+}
+
+.services-header {
+  margin: 2em 0em 2em 0em;
+  margin-left: 5%;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: $font-2;
+    font-weight: 600;
+
+    @include mq(sm) {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.services-block {
+  @include flex();
+  border: 1px solid $light-gray;
+  padding: 1.5em 2em 1em 2em;
+  margin-top: 1em;
+  min-height: 14em;
+
+  .services-block-left {
+    width: 15%;
+
+    @include mq(md) {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 1.4em;
+    } 
+
+    img {
+      max-width: 5em;
+    }
+  }
+
+  .services-block-right {
+    width: 85%;
+    font-weight: 300;
+    font-family: $font-1;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 0em 0em 0em 1.4em;
+
+    @include mq(md) {
+      width: 100%;
+      padding: 0em 0em 0em 0em;
+      font-size: .95rem;
+      line-height: 1.3rem;
+    } 
+  }
+}
+
+.quote-container-right {
+  float: right;
+  text-align: right;
+  line-height: 3.3rem;
+  padding-left: 30em;
+  background-color: $white;
+
+  @include mq(xl) {
+    padding-left: 25em;
+  }
+
+  @include mq(lg) {
+    padding-left: 15em;  
+  }
+
+  @include mq(md) {
+    padding-left: 10em; 
+  }
+
+  @include mq(sm) {
+    padding-left: 0em; 
+  }
+
+  img {
+    position: absolute;
+    top: 7em;
+    right: 1.1em;
+    min-width: 300px;
+
+    @include mq (md) {
+      top: 5em;
+      right: 0em;
+    }
+
+    @include mq (sm) {
+      top: 1em;
+      left: -2em;
+      margin-bottom: 2em;
+    }
+  }
+
+  .quotetext {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-weight: 200;
+    font-family: $font-2;
+    padding-right: 1em;
+    border-right: 4px solid $color-primary;
+    text-align: right;
+
+    @include mq (md) {
+      padding-top: 1em;
+      font-size: 2.4rem;
+      line-height: 3.4rem;
+    }
+
+    @include mq (sm) {
+      font-size: 1.9rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  small {
+    display: block;
+    font-weight: 400;
+    font-family: $font-1;
+    font-size: 1rem;
+    padding: 1em 3.5em 0em 0em;
+
+    @include mq (md) {
+      padding: 1em 3em 0em 0em;
+    }
+
+    @include mq (sm) {
+      padding: .5em 2em 0em 0em;
+    }
+  }
+}
+
+
+.quote-container-2 {
+  @include flex();
+  width: 100%;
+  padding: 5em 4em 2em 4em;
+  background-color: $white;
+
+  @include mq (md) {
+    padding: 2em 1.3em 2em 3em;
+  }
+
+  @include mq (sm) {
+    padding: 2em 2em 2em 2em;
+    border-bottom: none;
+  }
+
+  .quote-container-left {
+    width: 30%;
+
+    @include mq (sm) {
+      display: none;
+    }
+  }
+
+  .quote-container-right {
+    width: 70%;
+    
+    @include mq (sm) {
+      width: 100%;
+    }
+  }
+}

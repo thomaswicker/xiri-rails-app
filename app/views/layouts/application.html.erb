@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>XIRI Media, LLC - UI/UX & Front End Development in Denver, CO</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+
+  <body>
+      
+    <%= render :partial => '/partials/header' %>
+
+    <%= yield %>
+
+    <%= render :partial => '/partials/footer' %>
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

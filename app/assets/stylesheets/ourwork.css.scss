@@ -1,0 +1,264 @@
+/*
+   ___  _   _ ____   __        _____  ____  _  __
+  / _ \| | | |  _ \  \ \      / / _ \|  _ \| |/ /
+ | | | | | | | |_) |  \ \ /\ / / | | | |_) | ' / 
+ | |_| | |_| |  _ <    \ V  V /| |_| |  _ <| . \ 
+  \___/ \___/|_| \_\    \_/\_/  \___/|_| \_\_|\_\
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+*/
+
+@import 'vars';
+
+.ourwork-container {
+  background-color: $black;
+  padding: 0px;
+  
+  .image {
+    width: 100%;
+  }
+}
+
+.ourwork-header {
+  background-color: $black;
+  color: $white;
+  width: 90%;
+  margin-left: 5%;
+  padding: 3em 0em 2em 0em;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: $font-2;
+    font-weight: 600;
+    color: $white;
+
+    @include mq(sm) {
+      font-size: 1.7rem;
+    }
+  }
+
+  .bodytext {
+  }
+}
+
+.masonry-container {
+  width: 90%;
+  height: auto;
+  padding-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $black;
+  text-align: center;
+}
+
+.masonry {
+  width: 100%;
+  margin: 0px !important;
+  padding: 0px !important;  
+  color: none !important;
+  background-color: $black;
+  overflow-x: hidden;
+
+  .item {
+    float: left;
+    width: 33.3%;
+    height: auto;
+    background-color: $white;
+    padding: 2em 2em 2em 2em;
+    border: 1px solid #dddddd;
+
+    @include mq(lg) {
+      width: 50%;
+    }
+
+    @include mq(md) {
+      width: 50%;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+    }
+
+    h3 {
+      float: left;
+      width: 90%;
+      @include font($font-2, normal, 1.5rem, 200);
+      line-height: 1.6rem;
+      text-align: left;
+
+      @include mq(md) {
+        font-size: 1.2rem;
+      }
+
+      @include mq(sm) {
+        font-size: 1.2rem;
+      }
+    }
+
+    h4 {
+      float: left;
+      width: 90%;
+      margin-top: -5px;
+      @include font($font-1, normal, .9rem, 200);
+      color: $color-primary;
+      line-height: 1.4rem;
+      text-align: left;
+
+      @include mq(md) {
+        font-size: .8rem;
+      }
+
+      @include mq(sm) {
+        font-size: .8rem;
+      }
+    }
+
+    h5 {
+      float: left;
+      width: 90%;
+      @include font($font-1, normal, .75rem, 300);
+      color: $light-gray;
+      line-height: 1.4rem;
+      text-align: left;
+
+      @include mq(md) {
+        font-size: .75rem;
+      }
+
+      @include mq(sm) {
+        font-size: .75rem;
+      }
+    }
+
+    a {
+      font-size: .8rem;
+      text-decoration: none; 
+    }
+
+    .buttons {
+      float: left;
+      width: 100%;
+      text-align: left;
+
+      @include mq(sm) {
+      }
+    }
+
+    .image {
+      padding: 20px;
+    }
+  }
+}
+
+.quote-container-right {
+  float: right;
+  text-align: right;
+  line-height: 3.3rem;
+  padding-left: 30em;
+  background-color: $white;
+
+  @include mq(xl) {
+    padding-left: 25em;
+  }
+
+  @include mq(lg) {
+    padding-left: 15em;  
+  }
+
+  @include mq(md) {
+    padding-left: 10em; 
+  }
+
+  @include mq(sm) {
+    padding-left: 0em; 
+  }
+
+  img {
+    position: absolute;
+    top: 7em;
+    right: 1.1em;
+    min-width: 300px;
+
+    @include mq (md) {
+      top: 5em;
+      right: 0em;
+    }
+
+    @include mq (sm) {
+      top: 1em;
+      left: -2em;
+      margin-bottom: 2em;
+    }
+  }
+
+  .quotetext {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-weight: 200;
+    font-family: $font-2;
+    padding-right: 1em;
+    border-right: 4px solid $color-primary;
+    text-align: right;
+
+    @include mq (md) {
+      padding-top: 1em;
+      font-size: 2.4rem;
+      line-height: 3.4rem;
+    }
+
+    @include mq (sm) {
+      font-size: 1.9rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  small {
+    display: block;
+    font-weight: 400;
+    font-family: $font-1;
+    font-size: 1rem;
+    padding: 1em 3.5em 0em 0em;
+
+    @include mq (md) {
+      padding: 1em 3em 0em 0em;
+    }
+
+    @include mq (sm) {
+      padding: .5em 2em 0em 0em;
+    }
+  }
+}
+
+
+.quote-container-2 {
+  @include flex();
+  width: 100%;
+  padding: 5em 4em 2em 4em;
+  background-color: $white;
+
+  @include mq (md) {
+    padding: 2em 1.3em 2em 3em;
+  }
+
+  @include mq (sm) {
+    padding: 2em 2em 2em 2em;
+    border-bottom: none;
+  }
+
+  .quote-container-left {
+    width: 30%;
+
+    @include mq (sm) {
+      display: none;
+    }
+  }
+
+  .quote-container-right {
+    width: 70%;
+    
+    @include mq (sm) {
+      width: 100%;
+    }
+  }
+}

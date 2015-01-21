@@ -1,0 +1,152 @@
+/*
+  ___ __  __    _    ____ _____ ____  
+ |_ _|  \/  |  / \  / ___| ____/ ___| 
+  | || |\/| | / _ \| |  _|  _| \___ \ 
+  | || |  | |/ ___ \ |_| | |___ ___) |
+ |___|_|  |_/_/   \_\____|_____|____/ 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+*/
+
+@import 'vars';
+
+.xiri-brand {
+  img {
+    max-width: 90px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+
+    @include mq(lg) {
+      max-width: 90px;
+    }
+
+    @include mq(md) {
+      
+    }
+
+    @include mq(sm) {
+      max-width: 85px;
+    }
+  }
+}
+
+.vintage-tv {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: -15em;
+    left: .4em;
+    min-width: 300px;
+    max-width: 500px;
+    z-index: 50;
+
+    @include mq (xl) {
+      top: -15em;
+      left: .4em;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    @include mq (lg) {
+      top: -15em;
+      left: 1.1em;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    @include mq (md) {
+      top: -15em;
+      left: 1.1em;
+    }
+
+    @include mq (sm) {
+      top: -5em;
+      min-width: 250px;
+      max-width: 350px;
+    }
+  }
+}
+
+.guy-pointing {
+
+  img {
+    min-width: 250px;
+    max-width: 320px;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    z-index: 50;
+
+    @include mq(lg) {
+      left: 20px;
+      top: 30px;
+    }
+
+    @include mq(md) {
+      min-width: 210px;
+      max-width: 300px;
+      left: -10px;
+      top: 50px;  
+    } 
+
+    @include mq(sm) {
+      min-width: 210px;
+      max-width: 250px; 
+      left: -120px;
+      top: 80px;  
+    } 
+  }
+}
+
+.car-illustration {
+  text-align: center;
+
+  img {
+    position: absolute;
+    top: 6em;
+    right: 1.1em;
+    min-width: 420px;
+    max-width: 520px;
+
+    @include mq (lg) {
+      top: 8em;
+      right: 0em;
+      min-width: 350px;
+      max-width: 450px;
+    }
+
+    @include mq (md) {
+      top: 14em;
+      right: 0em;
+      min-width: 250px;
+      max-width: 300px;
+    }
+
+    @include mq (sm) {
+      top: .3em;
+      right: -7em;
+      position: relative;
+      margin-bottom: .4em;
+      min-width: 350px;
+      max-width: 400px;
+    }
+  }
+}
+
+.logo-9 {
+  display: none;
+
+  @include mq (lg) {
+    display: block;
+  }
+
+  @include mq (md) {
+    display: none;
+  }
+
+  @include mq (sm) {
+    display: block;
+  }
+}

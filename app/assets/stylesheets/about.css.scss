@@ -1,0 +1,108 @@
+/*
+     _    ____   ___  _   _ _____ 
+    / \  | __ ) / _ \| | | |_   _|
+   / _ \ |  _ \| | | | | | | | |  
+  / ___ \| |_) | |_| | |_| | | |  
+ /_/   \_\____/ \___/ \___/  |_|  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+*/
+
+@import 'vars';
+
+.about-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;  
+  border-bottom: 1px dotted $light-gray;
+  background-color: $white;
+  padding-bottom: 1.5em;
+
+  .about-container-left {
+    width: 25%;
+    text-align: center;
+
+    @include mq(lg) {
+      width: 30%;
+    }
+
+    @include mq(md) {
+      width: 40%;
+    }
+
+    @include mq(sm) {
+      display: none;
+    }
+
+    .about-container-button {
+      position: absolute;
+      top: 27em;
+      left: 7em;
+
+      @include mq(lg) {
+        top: 27em;
+        left: 5.5em;
+      }
+
+      @include mq(md) {
+        top: 27em;
+        left: 3em;
+      }
+
+      @include mq(sm) {
+        top: 27em;
+        left: 7em;
+      }
+    }
+  }
+
+  .about-container-right {
+    width: 75%;
+    padding: 2em 5em 0em 1em;
+    max-width: 1300px;
+
+    @include mq(lg) {
+      width: 70%;
+      padding: 2em 5em 0em 2em;
+    } 
+
+    @include mq(md) {
+      width: 60%;
+      padding: 2em 3em 2em 2em;
+    } 
+
+    @include mq(sm) {
+      width: 100%;
+      padding: 4em 2em 1em 2em;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-family: $font-2;
+      font-weight: 600;
+
+      @include mq(sm) {
+        font-size: 1.7rem;
+      }
+    }
+
+    .bodytext {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+
+      @include mq(md) {
+        font-size: 1rem;
+        line-height: 1.3rem;
+      }
+
+      @include mq(sm) {
+        font-size: 1rem;
+        line-height: 1.3rem;
+      }
+    }
+  }
+}
