@@ -43,6 +43,7 @@
 
   height: 55px;
   z-index: 52;
+  background-color: $color-primary !important;
 
   @include mq (sm) {
     background-color: #222 !important;
