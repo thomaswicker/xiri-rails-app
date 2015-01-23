@@ -12,7 +12,7 @@
 .quote-container {
   @include flex();
   border-bottom: 1px dotted $light-gray;
-  padding: 2em 4em 2em 4em;
+  padding: 3em 4em 2em 4em;
   background-color: $white;
 
   @include mq (md) {
@@ -30,14 +30,14 @@
   padding: 0em .4em 0em 0em;
 
   .quotetext {
-    font-size: 3rem;
+    font-size: 3.8rem;
     text-transform: uppercase;
     color: $color-primary;
     font-weight: 200;
     font-family: $font-2;
     padding-left: 1em;
     border-left: 4px solid $color-primary;
-    line-height: 3.3rem;
+    line-height: 4.4rem;
 
     @include mq (md) {
       font-size: 2.7rem;
@@ -52,10 +52,12 @@
 
   small {
     display: block;
-    font-weight: 400;
     font-family: $font-1;
-    font-size: 1rem;
-    padding: 1em 0em 0em 3em;
+    padding: 1em 3.5em 0em 0em;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0em 0em 0em 3em;
 
     @include mq (md) {
       padding: 1em 0em 0em 3em;
@@ -109,7 +111,7 @@
   }
 
   .quotetext {
-    font-size: 3rem;
+    font-size: 5rem !important;
     text-transform: uppercase;
     color: $color-primary;
     font-weight: 200;
@@ -132,10 +134,12 @@
 
   small {
     display: block;
-    font-weight: 400;
     font-family: $font-1;
-    font-size: 1rem;
     padding: 1em 3.5em 0em 0em;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: .8em;
 
     @include mq (md) {
       padding: 1em 3em 0em 0em;
@@ -151,7 +155,7 @@
 .quote-container-2 {
   @include flex();
   width: 100%;
-  padding: 5em 4em 2em 4em;
+  padding: 4em 4em 2em 4em;
   background-color: $white;
 
   @include mq (md) {
@@ -164,7 +168,7 @@
   }
 
   .quote-container-left {
-    width: 30%;
+    width: 60%;
 
     @include mq (sm) {
       display: none;
@@ -172,10 +176,26 @@
   }
 
   .quote-container-right {
-    width: 70%;
-    
+    width: 40%;
+
+    small {
+      font-size: 1.4rem;
+      font-weight: bold;
+      font-style: italic;
+      margin-right: .8em;
+    }
+
+    .quotetext {
+      font-size: 4.2rem;
+      line-height: 5.4rem;
+    }
+
     @include mq (sm) {
       width: 100%;
     }
   }
+}
+
+.quote-container-2 .quote-container-right {
+  width: 100% !important;
 }

@@ -55,7 +55,6 @@
   border: 1px solid $light-gray;
   padding: 1.5em 2em 1em 2em;
   margin-top: 1em;
-  min-height: 14em;
 
   .services-block-left {
     width: 15%;
@@ -78,6 +77,11 @@
     font-size: 1rem;
     line-height: 1.3rem;
     padding: 0em 0em 0em 1.4em;
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7rem;
+    }
 
     @include mq(md) {
       width: 100%;
