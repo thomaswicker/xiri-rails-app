@@ -1,0 +1,131 @@
+/*
+  ____  ____   ___   ____ _____ ____ ____  
+ |  _ \|  _ \ / _ \ / ___| ____/ ___/ ___| 
+ | |_) | |_) | | | | |   |  _| \___ \___ \ 
+ |  __/|  _ <| |_| | |___| |___ ___) |__) |
+ |_|   |_| \_\\___/ \____|_____|____/____/ 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+*/
+
+@import 'vars';
+
+.process-container {
+  @include flex();
+  padding-bottom: 1em;
+  background-color: $white;
+  
+  @include mq (md) {
+    padding-bottom: .3em;
+  }
+}
+
+.process-header {
+  margin-top: 3em;
+  margin-left: 5%;
+  background-color: $white;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: $font-2;
+    font-weight: 600;
+
+    @include mq(sm) {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.tools-container-inside {
+  width: 90%;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: $white;
+ 
+  @include mq (md) {
+    padding-bottom: 1em;
+  }
+
+  ul {
+    text-align: left;
+    list-style-type: none;
+    list-style: none;
+    
+    @include mq (sm) {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    li {
+      font-size: 1.3rem;
+
+      @include mq (md) {
+        font-size: 1.1rem;
+      }
+
+      img {
+        padding-right: 10px;
+        max-width: 23px;
+      }
+    }
+  }
+}
+
+.process-container-inside {
+  width: 100%;
+  margin-top: 2em;
+  padding: 1.5em 1em 1.2em 1em;
+  text-align: center;
+  background-color: #eee;
+  text-align: center;
+  
+  @include mq (sm) {
+    background-color: $white;
+  }
+
+  .process-block {
+    padding: 0em 1.5em 0em 1.5em;
+
+    @include mq (sm) {
+      border: 2px solid $color-primary;
+      margin-bottom: 1.2em;
+      padding: 1em 1.5em 1em 1.5em;
+      background-color: $white;
+    }
+  }
+
+  .process-step {
+    border: 2px solid $color-primary;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: $white;
+    color: $color-primary;
+    text-align: center;
+    padding-top: .2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .process-mini-header {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    padding-top: .5em;
+    padding-bottom: .4em;
+    text-transform: uppercase;
+    font-family: $font-1;
+
+    @include mq (sm) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .process-mini-text {
+    text-align: left;
+    padding-top: .2em;
+  }
+}
