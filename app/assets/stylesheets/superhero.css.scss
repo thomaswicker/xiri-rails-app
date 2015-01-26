@@ -30,7 +30,7 @@
     @include flex();
 
     .headline-left {
-      width: 20%;
+      width: 22%;
 
       @include mq(lg) {
         width: 25%;
@@ -46,9 +46,9 @@
     }
 
     .headline-right {
-      width: 80%;
-      max-width: 1300px;
-      padding-right: 5em;
+      width: 78%;
+      max-width: 1200px;
+      padding-right: 6em;
 
       h2 {
         color: $white;
@@ -75,11 +75,11 @@
 
       h4 {
         color: $white;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-left: 0em;
         margin-bottom: 1em;
         font-family: $font-2;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.3em;
 
         @include mq(lg) {
