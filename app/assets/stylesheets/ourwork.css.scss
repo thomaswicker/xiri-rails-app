@@ -53,19 +53,20 @@
 
 .masonry {
   width: 100%;
-  margin: 0px !important;
-  padding: 0px !important;  
-  color: none !important;
+  margin: 0px;
+  padding: 0px;  
+  color: none;
   background-color: $black;
   overflow-x: hidden;
+  @include flex();
 
   .item {
-    float: left;
     width: 33.3%;
     height: auto;
     background-color: $white;
     padding: 2em 2em 2em 2em;
     border: 1px solid #dddddd;
+    display: inline;
 
     @include mq(lg) {
       width: 33.3%;

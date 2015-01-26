@@ -19,15 +19,20 @@
 
 $(function(){ $(document).foundation(); });
 
- $(window).load(function() {
-    //JS BELOW IS FOR MASONRY INITIALIZATION
-    $('.masonry').masonry({
-     itemSelector : '.item',
-     isAnimated: true,
-     animationOptions: {
-      duration: 500,
-      easing: 'linear',
-      queue: false
-    }
+
+ $(window).resize(function() {
+
+  var $container = $('.masonry').masonry();
+  // layout Masonry again after all images have loaded
+  $container.imagesLoaded( function() {
+    $container.masonry({
+      itemSelector : '.item',
+      isAnimated: true,
+      animationOptions: {
+        duration: 300,
+        easing: 'linear',
+        queue: false
+      }
+    });
   });
 });
