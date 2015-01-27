@@ -11,11 +11,7 @@
 
 .xiri-brand {
   img {
-    max-width: 90px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1001;
+   float: left;
 
     @include mq(lg) {
       max-width: 90px;
@@ -26,6 +22,8 @@
     }
 
     @include mq(sm) {
+       margin-top: -45px;
+
       max-width: 85px;
     }
   }
