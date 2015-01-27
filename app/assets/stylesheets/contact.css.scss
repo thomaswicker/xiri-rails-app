@@ -44,7 +44,7 @@
     margin-right: auto;
          
     @include mq (sm) {
-      width: 98%;
+      width: 93%;
       padding-bottom: 4em;
     }
 
@@ -64,6 +64,7 @@
       @include mq (sm) {
         width: 100%;
         padding-right: 0em;
+        padding-bottom: 2em;
       }
 
       input, textarea {
@@ -121,6 +122,7 @@
     text-transform: uppercase;
     color: $black;
     font-weight: bold;
+
   }
 }
 
@@ -130,4 +132,12 @@
   font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
+
+  @include mq (md) {
+    font-size: 1.3rem;
+  }
+     
+  @include mq (sm) {
+    font-size: 1.2rem;
+  }
 }

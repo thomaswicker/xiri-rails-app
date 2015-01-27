@@ -26,12 +26,12 @@
 
   &:hover {
     color: $white;
-    background-color: lighten($black, 10%);
+    background-color: lighten($black, 30%);
   }
 
   &:focus {
     color: $white;
-    background-color: lighten($black, 10%);
+    background-color: lighten($black, 30%);
   }
 }
 
