@@ -12,7 +12,7 @@
 .process-container {
   float: left;
   width: 100%;
-  padding-bottom: 1em;
+  padding-bottom: 0em;
   background-color: $white;
   
   @include mq (md) {
@@ -54,7 +54,9 @@
     text-align: left;
     list-style-type: none;
     list-style: none;
-    
+    margin-top: 1.2em;
+    margin-bottom: 2em;
+
     @include mq (sm) {
       padding: 0px;
       margin: 0px;
