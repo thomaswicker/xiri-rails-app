@@ -19,7 +19,7 @@
   }
 
   @include mq(md) {
-    padding: 2em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
   }
 
   @include mq(sm) {
@@ -63,8 +63,9 @@
         }
 
         @include mq(md) {
-          font-size: 2.7rem;
-          line-height: 2.8rem; 
+          font-size: 2.3rem;
+          line-height: 2.6rem;
+          padding-bottom: .4em; 
         }
 
         @include mq(sm) {
@@ -76,21 +77,22 @@
       h4 {
         color: $white;
         font-size: 1.6rem;
+        line-height: 1.3em;
         margin-left: 0em;
         margin-bottom: 1em;
         font-family: $font-2;
         font-weight: 300;
-        line-height: 1.3em;
 
         @include mq(lg) {
-          font-size: 1.6rem;
+          font-size: 1.5rem;
           line-height: 1.4em;
+          margin-top: .6em;
           margin-bottom: .8em;
         }
 
         @include mq(md) {
-          font-size: 1.3rem;
-          line-height: 1.5em;
+          font-size: 1rem;
+          line-height: 1.4em;
         }
         
         @include mq(sm) {

@@ -48,7 +48,11 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: pink;
+  
+    @include mq (sm) {
+      width: 100%;
+    
+    }
 
     .client-logo {
       float: left;
@@ -75,10 +79,10 @@
       }
 
       @include mq (sm) {
+        width: 100%;
         clear: both;
         padding: 20px;
-        margin: 10px 0px 10px 0px;
-        width: 100%;
+        margin: 0px;
       }
     }
   }
