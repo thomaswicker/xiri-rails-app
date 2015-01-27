@@ -40,6 +40,11 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
+         
+    @include mq (sm) {
+      width: 100%;
+      padding-bottom: 4em;
+    }
 
     .contact-container-inside-left {
       width: 60%;
