@@ -11,7 +11,7 @@
 
 .superhero {
   min-height: 0px;
-  padding: .5em 1em 0em 1em;
+  padding: 2.5em 1em 0em 1em;
   background-color: $color-primary;
 
   @include mq(lg) {

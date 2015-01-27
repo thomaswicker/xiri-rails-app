@@ -89,7 +89,7 @@ html, body {
   overflow-x: hidden;
   overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
-  background-color: $color-primary;
+  background-color: $white;
 }
 
 //Form specific CSS -- needs to be moved
