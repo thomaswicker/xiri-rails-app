@@ -32,7 +32,9 @@
 }
 
 .vintage-tv {
-  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 100px;
 
   img {
     position: absolute;

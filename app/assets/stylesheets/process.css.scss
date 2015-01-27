@@ -11,6 +11,7 @@
 
 .process-container {
   float: left;
+  width: 100%;
   padding-bottom: 1em;
   background-color: $white;
   
@@ -20,6 +21,7 @@
 }
 
 .process-header {
+  width: 100%;
   margin-top: 3em;
   margin-left: 5%;
   background-color: $white;
@@ -74,6 +76,7 @@
 }
 
 .process-container-inside {
+  float: left;
   width: 100%;
   margin-top: 2em;
   padding: 1.5em 1em 1.2em 1em;
