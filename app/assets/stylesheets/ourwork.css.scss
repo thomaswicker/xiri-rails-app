@@ -52,15 +52,16 @@
 }
 
 .masonry {
+  float: left;
   width: 100%;
   margin: 0px;
   padding: 0px;  
   color: none;
   background-color: $black;
   overflow-x: hidden;
-  @include flex();
 
   .item {
+    float: left;
     width: 33.3%;
     height: auto;
     background-color: $white;
@@ -233,7 +234,7 @@
 
 
 .quote-container-2 {
-  @include flex();
+  float: left;
   width: 100%;
   padding: 5em 4em 2em 4em;
   background-color: $white;
@@ -248,6 +249,7 @@
   }
 
   .quote-container-left {
+    float: left;
     width: 30%;
 
     @include mq (sm) {
@@ -256,6 +258,7 @@
   }
 
   .quote-container-right {
+    float: left;
     width: 70%;
     
     @include mq (sm) {

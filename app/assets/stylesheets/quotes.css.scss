@@ -10,7 +10,7 @@
 @import 'vars';
 
 .quote-container {
-  @include flex();
+  float: left;
   border-bottom: 1px dotted $light-gray;
   padding: 3em 4em 2em 4em;
   background-color: $white;

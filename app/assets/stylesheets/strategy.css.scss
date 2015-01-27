@@ -10,7 +10,7 @@
 @import 'vars';
 
 .strategy-container {
-  @include flex();
+  float: left;
   padding-bottom: 1em;
   background-color: $white;
 }
@@ -33,6 +33,7 @@
 }
 
 .strategy-container-inside {
+  float: left;
   width: 90%;
   margin-top: 2em;
   margin-left: auto;

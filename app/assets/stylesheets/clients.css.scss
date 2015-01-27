@@ -29,7 +29,7 @@
 }
 
 .clients-container {
-  @include flex();
+  float: left;
   background-color: $color-primary;
   padding: 0em 0em 5em 0em;
 

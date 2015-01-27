@@ -174,7 +174,7 @@
 
 
 .quote-container-2 {
-  @include flex();
+  float: left;
   width: 100%;
   padding: 5em 4em 2em 4em;
   background-color: $white;
@@ -189,6 +189,7 @@
   }
 
   .quote-container-left {
+    float: left;
     width: 30%;
 
     @include mq (sm) {
@@ -197,6 +198,7 @@
   }
 
   .quote-container-right {
+    float: left;
     width: 70%;
     
     @include mq (sm) {
