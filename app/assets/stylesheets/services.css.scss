@@ -10,7 +10,7 @@
 @import 'vars';
 
 .services-container {
-  @include flex();
+  float: left;
   padding-bottom: 4.5em;
   background-color: $white;
 
@@ -26,11 +26,9 @@
   }
 
   .services-container-left {
-    @include flex();
   }
 
   .services-container-right {
-    @include flex();
   }
 }
 
@@ -51,12 +49,13 @@
 }
 
 .services-block {
-  @include flex();
+  float: left;
   border: 1px solid $light-gray;
   padding: 1.5em 2em 1em 2em;
   margin-top: 1em;
 
   .services-block-left {
+    float: left;
     width: 15%;
 
     @include mq(md) {
@@ -71,6 +70,7 @@
   }
 
   .services-block-right {
+    float: left;
     width: 85%;
     font-weight: 300;
     font-family: $font-1;

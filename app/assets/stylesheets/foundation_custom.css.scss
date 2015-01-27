@@ -61,11 +61,12 @@
 }
 
 .top-bar {
-  height: 55px;
+  height: 58px;
   z-index: 52;
   background-color: $color-primary !important;
 
   @include mq (sm) {
+    height: 54px;
     background-color: #222 !important;
   }
 }
@@ -74,10 +75,9 @@
 
   ul li {
     background-color: $color-primary !important;
-    margin-top: 18px;
 
     &:hover {
-      border-bottom: 3px solid $white;
+      border-bottom: 1px solid $white;
 
       @include mq (sm) {
         border-bottom: none !important;

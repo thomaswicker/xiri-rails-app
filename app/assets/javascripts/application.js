@@ -20,43 +20,21 @@
 $(function(){ $(document).foundation(); });
 
 
- $(window).resize(function() {
-
-  var $container = $('.masonry').masonry();
-  // layout Masonry again after all images have loaded
-  $container.imagesLoaded( function() {
-    $container.masonry({
-      itemSelector : '.item',
-      isAnimated: true,
-      animationOptions: {
-        duration: 300,
-        easing: 'linear',
-        queue: false
-      }
-    });
-  });
-});
 
 
- $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
+//SMMOTHSCROLL JS
 
-    if (scroll >= 500) {
-        $(".top-bar").addClass("stickyNav");
-    } else {
-        $(".top-bar").removeClass("stickyNav");
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
     }
 });
-
- function clearEmail(){
-    var clearButton = document.getElementById('cancelEmail').value;
-    document.getElementById('ghd').value = "";
-    $('#ghd').val('dsds');
-}
-
- $('#clearEmail').on('click', function () {
-    var xiriFormInputs = $('#xiriForm').children('.toClear');
-    var xiriTextArea = $('#xiriForm').children('textarea');
-    xiriFormInputs.val("");
-    xiriTextArea.val("");
- });

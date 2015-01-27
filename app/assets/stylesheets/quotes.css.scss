@@ -177,6 +177,14 @@
   .quote-container-right {
     width: 40%;
 
+    .quotetext {
+
+      @include mq (sm) {
+        font-size: 1.9rem !important;
+        line-height: 2.5rem !important;
+      }
+    }
+    
     small {
       font-size: 1.4rem;
       font-weight: bold;
@@ -192,12 +200,4 @@
 
 .quote-container-2 .quote-container-right {
   width: 100% !important;
-}
-
-.quotetext {
-
-  @include mq (sm) {
-    font-size: 1.9rem !important;
-    line-height: 2.5rem !important;
-  }
 }

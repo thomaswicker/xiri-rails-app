@@ -47,6 +47,7 @@ $font-4: "Courier New", Courier, monospace;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
 }
 
 
