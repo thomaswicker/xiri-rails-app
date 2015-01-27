@@ -28,6 +28,25 @@
 
 html, body {
   overflow-x: hidden;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
   background-color: $color-primary;
 }
 
+//Form specific CSS -- needs to be moved
+
+.toClear {
+  max-width: 800px;
+
+  @include mq (sm) {
+  	width: 100%;
+  }
+}
+
+textarea {
+  max-width: 900px;
+
+  @include mq (sm) {
+  	width: 100%;
+  }
+}

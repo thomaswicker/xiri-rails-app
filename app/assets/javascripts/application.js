@@ -47,3 +47,16 @@ $(function(){ $(document).foundation(); });
         $(".top-bar").removeClass("stickyNav");
     }
 });
+
+ function clearEmail(){
+    var clearButton = document.getElementById('cancelEmail').value;
+    document.getElementById('ghd').value = "";
+    $('#ghd').val('dsds');
+}
+
+ $('#clearEmail').on('click', function () {
+    var xiriFormInputs = $('#xiriForm').children('.toClear');
+    var xiriTextArea = $('#xiriForm').children('textarea');
+    xiriFormInputs.val("");
+    xiriTextArea.val("");
+ });

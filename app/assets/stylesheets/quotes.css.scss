@@ -151,7 +151,6 @@
   }
 }
 
-
 .quote-container-2 {
   @include flex();
   width: 100%;
@@ -188,6 +187,11 @@
     .quotetext {
       font-size: 4.2rem;
       line-height: 5.4rem;
+
+      @include mq (sm) {
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+      }
     }
 
     @include mq (sm) {
