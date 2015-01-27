@@ -16,7 +16,7 @@
   background-color: $white;
   
   @include mq (md) {
-    padding-bottom: .3em;
+    padding-bottom: 0em;
   }
 }
 
@@ -64,10 +64,11 @@
 
     li {
       font-size: 1.3rem;
-      line-height: 1.3em;
+      line-height: 1.6em;
 
       @include mq (md) {
         font-size: 1rem;
+        line-height: 1.7em;
       }
 
       img {
@@ -82,18 +83,22 @@
   float: left;
   width: 100%;
   margin-top: 2em;
-  padding: 1.5em 1em 1.2em 1em;
+  padding: 1.5em 1em 1.4em 1em;
   text-align: center;
   background-color: #eee;
   text-align: center;
-  
+
+
   @include mq (sm) {
     background-color: $white;
   }
 
-  .process-block {
-    
+  .process-block { 
     padding: 0em 1.5em 0em 1.5em;
+  
+    @include mq (md) {
+      padding: 0em 2em 1em 2em;
+    }
 
     @include mq (sm) {
       border: 2px solid $color-primary;

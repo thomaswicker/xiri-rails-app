@@ -34,7 +34,6 @@
 .vintage-tv {
   float: left;
   width: 100%;
-  min-height: 100px;
 
   img {
     position: absolute;
@@ -59,8 +58,10 @@
     }
 
     @include mq (md) {
-      top: -15em;
+      top: -12em;
       left: 1.1em;
+      min-width: 220px;
+      max-width: 320px;
     }
 
     @include mq (sm) {

@@ -31,17 +31,17 @@
 
   .quotetext {
     font-size: 3.8rem;
+    line-height: 4.2rem;
     text-transform: uppercase;
     color: $color-primary;
     font-weight: 200;
     font-family: $font-2;
     padding-left: 1em;
     border-left: 4px solid $color-primary;
-    line-height: 4.4rem;
 
     @include mq (md) {
       font-size: 2.7rem;
-      line-height: 15rem;
+      line-height: 3rem;
     }
 
     @include mq (sm) {
@@ -166,30 +166,71 @@
     border-bottom: none;
   }
 
-  .quote-container-left {
-    width: 60%;
+  .quote-container-2-left {
+    width: 35%;
+    
+    @include mq (lg) {
+      width: 35%;
+    }
 
+    @include mq (md) {
+      width: 40%;
+    }
+    
     @include mq (sm) {
       display: none;
     }
   }
 
-  .quote-container-right {
-    width: 40%;
+  .quote-container-2-right {
+    width: 65%;
 
-    .quotetext {
+    @include mq (lg) {
+      width: 65%;
+    }    
+
+    @include mq (md) {
+      width: 60%;
+    }
+
+    .quotetext-2 {
+      font-size: 5rem;
+      line-height: 5.4rem;
+      text-transform: uppercase;
+      color: $color-primary;
+      font-weight: 200;
+      font-family: $font-2;
+      padding-right: 1em;
+      border-right: 4px solid $color-primary;
+      text-align: right;
+
+      @include mq (lg) {
+        font-size: 3.8rem;
+        line-height: 4.2rem;
+      }
+
+      @include mq (md) {
+        padding-top: 1em;
+        font-size: 3.3rem;
+        line-height: 3.4rem;
+      }
 
       @include mq (sm) {
-        font-size: 1.9rem !important;
-        line-height: 2.5rem !important;
+        font-size: 1.9rem;
+        line-height: 2.5rem;
       }
     }
     
     small {
+      float: right;
+      width: 100%;
+      text-align: right;
       font-size: 1.4rem;
       font-weight: bold;
       font-style: italic;
+      margin-top: 1em;
       margin-right: .8em;
+      padding-right: 3em;
     }
 
     @include mq (sm) {

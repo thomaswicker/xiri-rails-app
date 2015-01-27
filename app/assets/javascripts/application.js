@@ -21,6 +21,19 @@ $(function(){ $(document).foundation(); });
 
 
 
+function clearEmail(){
+    var clearButton = document.getElementById('cancelEmail').value;
+    document.getElementById('ghd').value = "";
+    $('#ghd').val('dsds');
+}
+
+ $('#clearEmail').on('click', function () {
+    var xiriFormInputs = $('#xiriForm').children('.toClear');
+    var xiriTextArea = $('#xiriForm').children('textarea');
+    xiriFormInputs.val("");
+    xiriTextArea.val("");
+ });
+
 
 //SMMOTHSCROLL JS
 
@@ -38,3 +51,20 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+
+// Masonry for Portfolio Section
+
+$(window).resize(function() {
+  var $container = $('.masonry').masonry();
+  $container.imagesLoaded( function() {
+    $container.masonry({
+      itemSelector : '.item',
+      isAnimated: true,
+      animationOptions: {
+        duration: 300,
+        easing: 'linear',
+        queue: false
+      }
+    });
+   });
+ });
