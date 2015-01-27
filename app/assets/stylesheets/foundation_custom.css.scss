@@ -157,3 +157,12 @@
   display: none;
 }
 
+.orbit-next {
+  background: #000 !important;
+  opacity: .5;
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 1;
+  }
+}

@@ -51,6 +51,7 @@
   }
 
   ul {
+    float: left;
     text-align: left;
     list-style-type: none;
     list-style: none;
@@ -63,6 +64,8 @@
     }
 
     li {
+      float: left;
+      width: 100%;
       font-size: 1.3rem;
       line-height: 1.6em;
 
@@ -72,8 +75,10 @@
       }
 
       img {
-        padding-right: 10px;
+        float: left;
+        padding-right: 12px;
         max-width: 23px;
+        margin-top: 12px;
       }
     }
   }
