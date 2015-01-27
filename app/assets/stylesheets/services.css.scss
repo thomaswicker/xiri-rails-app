@@ -11,7 +11,7 @@
 
 .services-container {
   @include flex();
-  padding-bottom: 3.5em;
+  padding-bottom: 4.5em;
   background-color: $white;
 
   .services-container-inside {
@@ -35,7 +35,7 @@
 }
 
 .services-header {
-  margin: 2em 0em 2em 0em;
+  margin: 2em 0em 1em 0em;
   margin-left: 5%;
 
   h2 {

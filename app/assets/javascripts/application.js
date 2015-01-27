@@ -36,3 +36,14 @@ $(function(){ $(document).foundation(); });
     });
   });
 });
+
+
+ $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $(".top-bar").addClass("stickyNav");
+    } else {
+        $(".top-bar").removeClass("stickyNav");
+    }
+});
