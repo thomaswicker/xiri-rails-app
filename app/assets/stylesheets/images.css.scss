@@ -73,22 +73,31 @@
 
 .guy-pointing {
   img {
-    float: left;
+    position: absolute;
+    left: 50px;
+    top: 70px;
     min-width: 250px;
     max-width: 320px;
     z-index: 600;
 
     @include mq(lg) {
-
+      left: 20px;
+      top: 50px;
+      min-width: 210px;
+      max-width: 300px;
     }
 
     @include mq(md) {
-      min-width: 210px;
-      max-width: 300px;
+      left: 10px;
+      top: 60px;
+      min-width: 190px;
+      max-width: 280px;
 
     } 
 
     @include mq(sm) {
+      left: -80px;
+      top: 60px;
       min-width: 210px;
       max-width: 250px; 
 
